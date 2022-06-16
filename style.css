@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+
+
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+
+
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+
+
+
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center;
+    margin: 35px;
+    text-align: justify;
+}
+
+body {
+    max-width: 1440px;
+    background-color: hsl(0, 0%, 95%);
+
+}
+
+
+main {
+    height: 100vh;
+    margin: 35px;
+}
+
+h2 {
+    color: hsl(0, 0%, 95%);
+    font-size: 20px;
+    font-weight: 700px;
+    font-family: 'Big Shoulders Display', sans-serif;
+    margin: 40px;
+}
+
+img {
+    margin: 30px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+
+}
+
+button {
+    border: 5px;
+    border-color: white;
+    width: 90px;
+    height: 25px;
+    border-radius: 40px;
+}
+
+.btn1 {
+    color: hsl(31, 77%, 52%);
+
+}
+
+.btn2 {
+    color: hsl(184, 100%, 22%);
+
+}
+
+.btn3 {
+    color: hsl(179, 100%, 13%);
+
+}
+
+.btna,
+.btnb,
+.btnc {
+    background-color: hsl(0, 0%, 95%);
+    border: 5px;
+    border-color: white;
+    margin: 35px;
+    font-size: 15px;
+    text-align: center;
+    width: 90px;
+    height: 25px;
+    border-radius: 40px;
+
+
+
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.btn1:active {
+    color: white;
+    background-color: hsl(31, 77%, 52%);
+}
+
+.btn2:active {
+    color: white;
+    background-color: hsl(184, 100%, 22%);
+}
+
+.btn3:active {
+    color: white;
+    background-color: hsl(179, 100%, 13%);
+}
+
+.btna:active {
+    border-color: white;
+    border: 5px;
+}
+
+.btnb:active {
+    border-color: white;
+}
+
+.btnc:active {
+    border-color: white;
+}
+
+.grid-task {
+    text-align: center;
+    font-size: 30px;
+    background-color: blue;
+}
+
+@media screen and (max-width:375px) {
+    .main {
+        flex-direction: column;
+        width: 80%;
+    }
+}
+
+
+/* GRID STYLINGS*/
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        'a a a a b b'
+        'a a a a b b'
+        'c c c d d d'
+        'c c c e e e'
+    ;
+    margin: auto;
+
+}
+
+.box1 {
+    background-color: orangered;
+    grid-area: a;
+    color: orangered;
+}
+
+.box2 {
+    background-color: yellow;
+    grid-area: b;
+    color: yellow;
+}
+
+.box3 {
+    background-color: green;
+    grid-area: c;
+    color: green;
+}
+
+.box4 {
+    background-color: rgb(36, 36, 228);
+    grid-area: d;
+    color: rgb(36, 36, 228);
+}
+
+.box5 {
+    background-color: rgb(36, 36, 228);
+    grid-area: e;
+    color: rgb(36, 36, 228);
+}
+
+.grid div {
+    margin: 10px;
+}
